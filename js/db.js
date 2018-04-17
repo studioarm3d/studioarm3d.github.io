@@ -50,16 +50,22 @@ var filamentosExistentes = [
 		"preco"	: 0.21
 	},
 	{
-		"name" 	: "3DFila - Flexivel",		
-		"key"	: "3dFilaFlex",
-		"disponivel" : true,
-		"preco"	: 0.21
-	},
-	{
 		"name" 	: "3DFila - PETG",		
 		"key"	: "3dFilaPetg",
 		"disponivel" : true,
 		"preco"	: 0.16
+	},
+	{
+		"name" 	: "Filament2Print - Moldlay(cera)",		
+		"key"	: "f2pCera",
+		"disponivel" : true,
+		"preco"	: 0.38
+	},
+	{
+		"name" 	: "Sethi - ABS natural",		
+		"key"	: "sethiAbsNat",
+		"disponivel" : true,
+		"preco"	: 0.17
 	},
 	
 ];
