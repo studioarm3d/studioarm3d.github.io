@@ -17,6 +17,7 @@ var intersection = function(a, b){
 var procentPesoSoft = 1.2;
 var procentTempSoft = 1.2;
 var precoMinutoMaquina = 0.006;
+var multiLucro = 5;
 
 var filamentosExistentes = [					
 	{

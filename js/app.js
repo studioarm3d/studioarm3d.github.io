@@ -31,4 +31,6 @@ var calcular = function() {
 	var total = x1 + x2;
 	
 	$("#total").text("R$ " + total.toFixed(2));
+	$("#precoFinal").text("R$ " + (total.toFixed(2)*multiLucro).toFixed(2));
+
 };
