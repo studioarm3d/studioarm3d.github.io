@@ -15,14 +15,17 @@
 
 var limpar = function() {
 	var gramas = $('#quantGramas').val();
-	var tempo = $('#tempoUtilizado').val();
+	var minutos = $('#minutosUtilizados').val();
+	var horas = $('#horasUtilizadas').val();
 
 	$("#total").text("");
 };
 
 var calcular = function() {
 	var gramas = $('#quantGramas').val();
-	var tempo = $('#tempoUtilizado').val();
+	var horas = $('#horasUtilizadas').val();
+	var minutos = $('#minutosUtilizados').val();
+	var tempo = parseInt(horas * 60) + parseInt(minutos);
 	var fila = findExistFila("key", $('#selectFila').val());
 
 	var x1 = (gramas * procentPesoSoft) * fila.preco;
