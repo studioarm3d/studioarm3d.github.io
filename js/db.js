@@ -15,11 +15,17 @@ var intersection = function(a, b){
 
 // Db
 var procentPesoSoft = 1.2;
-var procentTempSoft = 1.2;
+var procentTempSoft = 1.32;
 var precoMinutoMaquina = 0.006;
 var multiLucro = 5;
 
 var filamentosExistentes = [					
+	{
+		"name" 	: "Monster - ABS dental",		
+		"key"	: "dentalAbs",
+		"disponivel" : true,
+		"preco"	: 0.15
+	},
 	{
 		"name" 	: "3DFila - ABS Premium",		
 		"key"	: "3dFilaAp",
