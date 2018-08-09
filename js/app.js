@@ -25,11 +25,21 @@ var calcular = function() {
 	var gramas = $('#quantGramas').val();
 	var horas = $('#horasUtilizadas').val();
 	var minutos = $('#minutosUtilizados').val();
-	var tempo = parseInt(horas * 60) + parseInt(minutos);
+	var tempo = 0;
+	if (horas) {
+		tempo = parseInt(horas * 60);
+	}
+	if (minutos) {
+		tempo += parseInt(minutos);
+	}
 	var tempoTotal = tempo * procentTempSoft;
 	
-	var fila = findExistFila("key", $('#selectFila').val());
-
+	var fila = {};
+	if ($('#checkUsaPersonalizado').is(':checked')) {
+		fila.preco = $('#precoGramaPersonalizado').val();
+	}else{
+		fila = findExistFila("key", $('#selectFila').val());
+	}
 
 	var x1 = (gramas * procentPesoSoft) * fila.preco;
 	var x2 = (tempoTotal) * precoMinutoMaquina;
